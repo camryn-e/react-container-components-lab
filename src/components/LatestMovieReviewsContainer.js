@@ -17,11 +17,7 @@ export default class LatestMovieReviewsContainer extends Component {
       };
     }
 
-    handleFetch = () => {
-      fetch(URL)
-        .then(response => response.json())
-        .then(reviewsData => this.setState({ reviews: reviewsData.results }, console.log("reviews after fetch", this.state.reviews)))
-    }
+    
 
     componentDidMount() {
       fetch(URL)

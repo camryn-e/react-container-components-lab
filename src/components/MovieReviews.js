@@ -8,7 +8,7 @@ import React from 'react';
 const MovieReviews = ({ reviews }) => (
     <div className="review-list">
         {reviews.map(review =>  <div className="review">
-        { review }
+        { review, console.log(review)}
         </div>)}
     </div>
   )
